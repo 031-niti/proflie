@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #4986aa;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile {   
+    width: 700px; 
+    height: auto;  
+    background-color: #ddd;
+    margin: 7.5rem auto;
+    padding: 1rem ;
+    border-radius: 20px;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.4);
+}
+
+.img {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 13px;
+    display: flex;
+    justify-content: center; 
+}
+
+.img img {
+    width: 230px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.detail {
+    margin: 8rem 0 1rem 0;
+}
+
+.detail .name {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    color: #ff00bf9f;
+}
+
+.fa-facebook {
+    color: rgb(65, 65, 65);
+}
+
+.fa-instagram {
+    color: rgb(65, 65, 65);
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star h3{
+    margin-top: 0.6rem;
+    font-size: 25px;
+}
+
+.fa-star{
+    padding: 0 3px 0 3px ;
+    font-size: 28px;
+}
+
+.checked { 
+    color: #ffa500;
+}
+
+.nochecked{
+    color: rgb(104, 104, 104);
+}  
+
+@media screen and (max-width: 760px){
+
+    .profile {   
+        margin: 7.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .img {
+        top: 23px;
+    }
+
+    .img img {
+        width: 200px;
+        height: auto;
+    }
+}
